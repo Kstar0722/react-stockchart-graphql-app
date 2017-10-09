@@ -1,0 +1,133 @@
+/* dark theme */
+.header {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: thin #525252 solid;
+}
+
+.display-menu {
+    color: white;
+    opacity: 0.8;
+}
+
+.share-menu {
+    color: white;
+    opacity: 0.8;
+    margin: auto;
+    margin-bottom: 0;
+    font-weight: 700;
+    label:hover {
+        color: #666;
+    }
+}
+
+.search {
+    position: relative;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    opacity: 0.7;
+}
+
+
+.search-input {
+    width: 150px;
+    height: 25px;
+    color: #FFFFFF;
+    background: #151f28;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 100;
+    text-indent: 5px;
+    outline-width: 5px;
+    outline-offset: 1px;
+    border: none;
+    transition: width 0.3s, background 0.3s;
+    z-index: 1000;
+}
+
+/* light theme */
+.header-light {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: thin #D6D3D3 solid;
+}
+
+.display-menu-light {
+    color: black;
+    opacity: 0.8;
+}
+
+.share-menu-light {
+    color: black;
+    opacity: 0.8;
+    margin: auto;
+    margin-bottom: 0;
+    font-weight: 700;
+    label:hover {
+        color: #666;
+    }
+}
+
+.search-light {
+    position: relative;
+    color: black;
+    margin: auto;
+}
+
+.search-light .fa-search {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    opacity: 0.7;
+}
+
+
+.search-input-light {
+    width: 150px;
+    height: 25px;
+    color: black;
+    background: white;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 100;
+    text-indent: 5px;
+    outline-width: 5px;
+    outline-offset: 1px;
+    border: none;
+    transition: width 0.3s, background 0.3s;
+    z-index: 1000;
+}
+
+/*
+.search-input:focus {
+    width: 450px;
+    background: #1c2a35;
+}
+*/
+.search-panel {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 450px;
+    height: 800px;
+    color: black;
+    background: #EBEBEB;
+    z-index: 1000;
+    word-wrap: break-word;
+    animation-name: searchPanel;
+    animation-duration: 0.3s;
+}
+
+@keyframes searchPanel {
+    from { height: 0px; }
+    to { height: 800px; }
+}
